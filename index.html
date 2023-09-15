@@ -2,9 +2,12 @@
 <html lang="pt-BR">
 
 <head>
+    
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/">
     <title>Pokedex</title>
 
     <!-- Normalize CSS -->
@@ -18,13 +21,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 
     <!-- Nosso CSS -->
-    <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/pokedex.css">
 </head>
 
 <body>
     <section class="content">
-        <h1>Pokedex</h1>
+        <div class="headerHome">
+            <h1>Pokedex </h1>
+            <div class = "github">
+                <div id="github">
+                    <p>Modified by<br> Lucas Santos <br>
+                        <a class="a" href="https://github.com/Lucasrss19/"target="_blank", style="text-decoration: none;">GitHub Profile</a>
+                    </p>
+                </div >
+                </div>
+        </div>
 
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
@@ -32,15 +44,27 @@
 
         <div class="pagination">
             <button id="loadMoreButton" type="button">
-                Load More
+                Loading More...
             </button>
-        </div>
+        </div>        
     </section>
 
+    <div class="modal"></div>
+
+    <div id="popup">
+        <button id="close-bnt" onclick="closePopUp()"><img src="./assets/img/cross.png"></button> <br>
+        <label>Favorite Pokémon added!</label>
+    </div>
+
     <!-- Nosso JS -->
-    <script src="/assets/js/pokemon-model.js"></script>
-    <script src="/assets/js/poke-api.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script src="./assets/js/pokemon-model.js"></script>
+    <script src="./assets/js/poke-api.js"></script>
+    <script src="./assets/js/main.js"></script>
+    
+
+    
 </body>
+
+
 
 </html>
